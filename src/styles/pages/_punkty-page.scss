@@ -1,0 +1,50 @@
+.punkty-page__container {
+  font-family: "Open Sans", "sans-serfi";
+  background-color: $primary-color-2;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 7.5rem 2rem 9rem 2rem;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+
+  & .punkty-page__header {
+    position: absolute;
+    top: 0;
+    padding: 2rem 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: $primary-color-2;
+    border-bottom: 1px solid $grey;
+  }
+
+  & .punkty-page__icon {
+    position: absolute;
+    left: 2.5rem;
+    font-size: $font-size-icon-2;
+  }
+
+  & .punkty-page__title {
+    color: $grey;
+    font-weight: 600;
+  }
+
+  & .punkty-page__body {
+    padding: 3rem 0;
+    margin: 2rem 0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba($grey, 0.2);
+
+    & span {
+      font-size: $font-size-l;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.chat-page__container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-color-2;
+  font-family: 'Open Sans', 'sans-serfi';
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}

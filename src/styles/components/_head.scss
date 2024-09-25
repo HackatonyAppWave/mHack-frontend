@@ -1,0 +1,27 @@
+.head__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: "Open Sans", "sans-serfi";
+  background-color: $primary-color-2;
+  z-index: 100;
+
+  & .head__user {
+    color: $white;
+    background-color: $primary-color-1;
+    padding: 0.75rem 1.5rem;
+    border-radius: 60%;
+    font-size: $font-size-xs;
+  }
+
+  & .head__notifications {
+    font-size: $font-size-icon-1;
+    color: $grey;
+  }
+}

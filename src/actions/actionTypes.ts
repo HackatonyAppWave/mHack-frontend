@@ -1,0 +1,5 @@
+export const HOME_PAGE_ACTIVE = "HOME_PAGE_ACTIVE";
+export const SERVICES_PAGE_ACTIVE = "SERVICES_PAGE_ACTIVE";
+export const CHAT_MENU_TOGGLE = "CHAT_MENU_TOGGLE";
+export const CHAT_OPEN = "CHAT_OPEN";
+export const CHAT_CLOSE = "CHAT_CLOSE";

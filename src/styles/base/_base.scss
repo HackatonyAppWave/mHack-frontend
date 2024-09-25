@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link .active {
+  color: $primary-color-1;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $primary-color-3;
+  box-sizing: border-box;
+  font-family: "Open Sans", "sans-serfi";
+  font-size: $font-size-s;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: black;
+}
