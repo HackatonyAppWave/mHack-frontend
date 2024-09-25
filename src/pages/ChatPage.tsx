@@ -33,9 +33,9 @@ const ChatPage: React.FC<PropsType> = ({ chatsData, SetChats }) => {
   React.useEffect(() => {
     let url;
     if (id == undefined) {
-      url = `${process.env.REACT_APP_BACKEND_URL}/chats`;
+      url = `https://mhack-backend.onrender.com/chats`;
     } else {
-      url = `${process.env.REACT_APP_BACKEND_URL}/chats?id=${id}`;
+      url = `https://mhack-backend.onrender.com/chats?id=${id}`;
     }
     axios.get(url).then((res) => {
       SetChats(res.data);
@@ -49,13 +49,13 @@ const ChatPage: React.FC<PropsType> = ({ chatsData, SetChats }) => {
   React.useEffect(() => {
     if (id != undefined) {
       axios
-        .get(`${process.env.REACT_APP_BACKEND_URL}/chat/${id}`)
+        .get(`https://mhack-backend.onrender.com/chat/${id}`)
         .then((res) => {
           setMessages(res.data);
         })
         .catch((err) => {
           if (err.response.status === 404) {
-            axios.get(`${process.env.REACT_APP_BACKEND_URL}/chats`).then((res) => {
+            axios.get(`https://mhack-backend.onrender.com/chats`).then((res) => {
               SetChats(res.data);
               let chat = res.data[0];
               navigate(`/chat/${chat.id}`);
@@ -78,7 +78,7 @@ const ChatPage: React.FC<PropsType> = ({ chatsData, SetChats }) => {
       ]);
 
       axios
-        .post(`${process.env.REACT_APP_BACKEND_URL}/chat/${id}`, { message: input.trim() })
+        .post(`https://mhack-backend.onrender.com/chat/${id}`, { message: input.trim() })
         .then((res) => {
           setMessages((prevMessages: any) => [...prevMessages, res.data]);
           if (res.data.tool == 'Znajdź lub pokaż zakładkę') {
